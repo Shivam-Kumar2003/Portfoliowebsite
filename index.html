@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Kumar — Data & ML Engineer</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons (lightweight icon set) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">SK<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <!-- Mobile hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Animated background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Shivam Kumar</span>
+      </h1>
+
+      <p class="hero-role">
+        Software Engineer &amp; <span class="typewriter" id="typewriter"></span>
+      </p>
+
+      <p class="hero-tagline">
+        Turning raw data into meaningful decisions — <br class="br-hide"/>
+        one model, one dashboard, one insight at a time.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="ri-send-plane-line"></i> Hire Me
+        </a>
+        <a href="#projects" class="btn btn-ghost">
+          View Projects <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">95%</span>
+          <span class="stat-label">CNN Accuracy</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">20%</span>
+          <span class="stat-label">Wait-time Reduced</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">30%</span>
+          <span class="stat-label">Data Quality ↑</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar / illustration area -->
+    <div class="hero-visual reveal reveal-right">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">SK</span>
+        </div>
+      </div>
+      <!-- Floating tech pills -->
+      <div class="float-pill pill-1"><i class="ri-python-line"></i> Python</div>
+      <div class="float-pill pill-2"><i class="ri-bar-chart-2-line"></i> Power BI</div>
+      <div class="float-pill pill-3"><i class="ri-brain-line"></i> ML / CNN</div>
+      <div class="float-pill pill-4"><i class="ri-database-2-line"></i> MySQL</div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <i class="ri-arrow-down-line"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-tag reveal">About Me</div>
+      <h2 class="section-title reveal">Detail-Oriented. Data-Driven.<br/><span class="gradient-text">Always Learning.</span></h2>
+
+      <div class="about-grid">
+        <!-- Bio card -->
+        <div class="glass-card about-bio reveal">
+          <p>
+            I'm a final-year B.Tech Computer Science student at Punjabi University Patiala (CGPA: 7.78),
+            passionate about extracting insights from complex datasets and building intelligent systems.
+          </p>
+          <p>
+            My work spans Exploratory Data Analysis, deep learning (CNNs), interactive dashboards,
+            and prompt engineering — bridging raw data and real-world impact.
+          </p>
+          <div class="about-links">
+            <a href="mailto:shivamsinghcsk@gmail.com" class="icon-link">
+              <i class="ri-mail-line"></i> shivamsinghcsk@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/shivam-kumar062003" target="_blank" class="icon-link">
+              <i class="ri-linkedin-box-line"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Skills grid -->
+        <div class="skills-grid reveal">
+          <div class="skill-item"><i class="ri-python-line"></i><span>Python</span></div>
+          <div class="skill-item"><i class="ri-database-2-line"></i><span>MySQL</span></div>
+          <div class="skill-item"><i class="ri-bar-chart-2-line"></i><span>Power BI</span></div>
+          <div class="skill-item"><i class="ri-brain-line"></i><span>Machine Learning</span></div>
+          <div class="skill-item"><i class="ri-eye-line"></i><span>CNN / Deep Learning</span></div>
+          <div class="skill-item"><i class="ri-line-chart-line"></i><span>Data Analytics</span></div>
+          <div class="skill-item"><i class="ri-search-eye-line"></i><span>EDA</span></div>
+          <div class="skill-item"><i class="ri-robot-line"></i><span>Prompt Engineering</span></div>
+          <div class="skill-item"><i class="ri-pie-chart-2-line"></i><span>Statistical Analysis</span></div>
+          <div class="skill-item"><i class="ri-code-s-slash-line"></i><span>Java (Familiar)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-tag reveal">Projects</div>
+      <h2 class="section-title reveal">Things I've <span class="gradient-text">Built</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-accent accent-green"></div>
+          <div class="project-meta">
+            <span class="project-date">Apr 2025</span>
+            <span class="project-icon"><i class="ri-plant-line"></i></span>
+          </div>
+          <h3 class="project-title">Plant Leaf Disease Detection</h3>
+          <p class="project-desc">
+            AI-powered system using a custom CNN trained on the Plant Village Dataset to classify plant diseases with 95%+ accuracy — automating agricultural diagnostics.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>CNN</span><span>Deep Learning</span><span>Plant Village</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-result"><i class="ri-flashlight-line"></i> 95%+ Classification Accuracy</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-accent accent-blue"></div>
+          <div class="project-meta">
+            <span class="project-date">Jul 2024</span>
+            <span class="project-icon"><i class="ri-bar-chart-grouped-line"></i></span>
+          </div>
+          <h3 class="project-title">Animal Centre EDA</h3>
+          <p class="project-desc">
+            In-depth EDA on shelter animal intake/outtake data revealing trends in capacity, adoption rates, and seasonal patterns — including a 15% reduction in average stay duration.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Pandas</span><span>EDA</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-result"><i class="ri-flashlight-line"></i> 10+ Visualizations, 15% Stay Reduction Found</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-accent accent-purple"></div>
+          <div class="project-meta">
+            <span class="project-date">Oct 2024</span>
+            <span class="project-icon"><i class="ri-heart-pulse-line"></i></span>
+          </div>
+          <h3 class="project-title">Healthcare Analytics Dashboard</h3>
+          <p class="project-desc">
+            Advanced Power BI dashboard analyzing healthcare operations data — identifying scheduling bottlenecks to cut patient waiting time by 20% and support data-driven decisions.
+          </p>
+          <div class="project-tags">
+            <span>Power BI</span><span>DAX</span><span>Healthcare Data</span><span>Analytics</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-result"><i class="ri-flashlight-line"></i> 20% Reduction in Wait Time</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE + EDUCATION
+  ═══════════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-tag reveal">Journey</div>
+      <h2 class="section-title reveal">Experience &amp; <span class="gradient-text">Education</span></h2>
+
+      <div class="timeline-grid">
+
+        <!-- Experience column -->
+        <div class="timeline-col reveal">
+          <div class="timeline-col-label"><i class="ri-briefcase-line"></i> Experience</div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body glass-card">
+              <div class="tl-header">
+                <div>
+                  <h4>WBL Intern</h4>
+                  <span class="tl-company">NIELIT ROPAR · Govt. of India</span>
+                </div>
+                <span class="tl-date">Feb '25 – Aug '25</span>
+              </div>
+              <ul class="tl-points">
+                <li>EDA on student datasets → identified 20% improvement in academic performance trends.</li>
+                <li>Boosted data quality 30% by cleaning & standardizing 20+ variables.</li>
+                <li>Built 10+ visualizations on attendance, performance & demographics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body glass-card">
+              <div class="tl-header">
+                <div>
+                  <h4>Data Analyst Intern</h4>
+                  <span class="tl-company">Accenture (Virtual)</span>
+                </div>
+                <span class="tl-date">Aug '24</span>
+              </div>
+              <ul class="tl-points">
+                <li>Collaborated on real-world business challenges via Accenture's virtual program.</li>
+                <li>Hands-on in data analysis, digital marketing & project management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education + Certs column -->
+        <div class="timeline-col reveal">
+          <div class="timeline-col-label"><i class="ri-graduation-cap-line"></i> Education &amp; Certifications</div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body glass-card">
+              <div class="tl-header">
+                <div>
+                  <h4>B.Tech — CSE</h4>
+                  <span class="tl-company">Punjabi University Patiala</span>
+                </div>
+                <span class="tl-date">Jul '21 – Jul '25</span>
+              </div>
+              <p style="font-size:0.88rem;margin-top:0.5rem;opacity:0.75;">CGPA: <strong>7.78</strong></p>
+            </div>
+          </div>
+
+          <div class="certs-grid">
+            <div class="cert-pill"><i class="ri-medal-line"></i> GFG Data Analytics · Jun–Sep '24</div>
+            <div class="cert-pill"><i class="ri-google-line"></i> Google I/O · Aug '24</div>
+            <div class="cert-pill"><i class="ri-bar-chart-box-line"></i> Tableau Workshop · Aug '23</div>
+            <div class="cert-pill"><i class="ri-award-line"></i> IIT Kanpur Data Science · Jun–Jul '23</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-tag reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's <span class="gradient-text">Work Together</span></h2>
+
+      <div class="contact-grid">
+
+        <!-- Info side -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Open to full-time roles, internships, and freelance data projects. Drop a message and I'll get back within 24 hours.
+          </p>
+          <div class="contact-items">
+            <a href="mailto:shivamsinghcsk@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="ri-mail-send-line"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-value">shivamsinghcsk@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+918651946402" class="contact-item">
+              <div class="ci-icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <span class="ci-label">Phone</span>
+                <span class="ci-value">+91 8651946402</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/shivam-kumar062003" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="ri-linkedin-box-line"></i></div>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">shivam-kumar062003</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form side -->
+        <div class="contact-form-wrap reveal">
+          <div class="glass-card contact-form-card">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="you@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="5" placeholder="What's on your mind?"></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" id="sendBtn">
+              <i class="ri-send-plane-2-line"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="ri-checkbox-circle-line"></i> Message sent! I'll reply soon.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">SK<span class="dot">.</span></span>
+      <p class="footer-copy">© 2025 Shivam Kumar. Crafted with precision.</p>
+      <div class="footer-socials">
+        <a href="mailto:shivamsinghcsk@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+        <a href="https://linkedin.com/in/shivam-kumar062003" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+        <a href="#" aria-label="GitHub"><i class="ri-github-line"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
